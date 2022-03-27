@@ -6,7 +6,7 @@ currently only works on <b>linux and mpv</b>, will try to connect with vlc media
 <hr>
 
 # Dependencies
-### 1. mpv
+### 1. [mpv](https://mpv.io/)
 #### Arch Linux
 ```sh
 sudo pacman -Syu mpv
@@ -16,12 +16,12 @@ sudo pacman -Syu mpv
 sudo apt install mpv
 ```
 
-### 2. Youtubedl
+### 2. [Youtubedl](https://github.com/ytdl-org/youtube-dl)
 ```sh
 pip3 install youtube-dl
 ```
 
-### 3. Youtube_search
+### 3. [Youtube_search](https://pypi.org/project/youtube-search/)
 ```sh
 pip3 install youtube_search
 ```
