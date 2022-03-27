@@ -3,10 +3,11 @@ This is a terminal python project to learn the basics of os.sys calls and also w
 
 # This project works on 
 This project currently only works on linux.
+This has not been tested on MacOS. since it is a plain python file, it should run with mpv
 
 It uses mpv as the media player
 
-Ability to run it on windows will be added in the near future after all wishful upgrades are in place.
+Ability to run it on windows(using some other media player more natively supported) will be added in the near future after all wishful upgrades are in place.
 
 <hr>
 
@@ -43,6 +44,7 @@ pip3 install youtube_search
 2. Playing a youtube playlist
 3. PLaying a user created playlist
 4. Adding Keybind configuration for users ease
+5. Adding mobile support
 
 ## NOTE
 **please** note that this is a project to practice what i've learnt in python, and get ad-free music. You could just use mpv from the command-line directly instead of running this py file. **THIS IS A JUST A PRACTICE PROJECT**
