@@ -26,3 +26,16 @@ pip3 install youtube-dl
 pip3 install youtube_search
 ```
 <hr>
+## Current Things that work
+1. playing a local mp3 song (one song only)
+2. playing a song by pulling is from youtube (one song only)
+<hr>
+
+## Working on
+1. Playing multiple local files in one folder
+2. Playing a youtube playlist
+3. PLaying a user created playlist
+4. Adding Keybind configuration for users ease
+
+## NOTE
+**please** note that this is a project to practice what i've learnt in python, and get ad-free music. You could just use mpv from the command-line directly instead of running this py file. **THIS IS A JUST A PRACTICE PROJECT**
