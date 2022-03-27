@@ -1,8 +1,12 @@
 # Terminal_Music_Player_python_project
 This is a terminal python project to learn the basics of os.sys calls and also work with other apps like mpv and packages like youtube dl and youtube search.
 
-# Working OS
-currently only works on <b>linux and mpv</b>, will try to connect with vlc media player on windows 
+# This project works on 
+This project currently only works on linux 
+It uses mpv as the media player
+
+Ability to run it on windows will be added in the near future after all wishful upgrades are in place.
+
 <hr>
 
 # Dependencies
