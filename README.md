@@ -2,7 +2,8 @@
 This is a terminal python project to learn the basics of os.sys calls and also work with other apps like mpv and packages like youtube dl and youtube search.
 
 # This project works on 
-This project currently only works on linux 
+This project currently only works on linux.
+
 It uses mpv as the media player
 
 Ability to run it on windows will be added in the near future after all wishful upgrades are in place.
@@ -33,7 +34,7 @@ pip3 install youtube_search
 
 ## Current Things that work
 1. playing a local mp3 song (one song only)
-2. playing a song by pulling is from youtube (one song only)
+2. playing a song by pulling it from youtube (one song only)
 
 <hr>
 
