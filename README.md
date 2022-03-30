@@ -36,13 +36,14 @@ pip3 install youtube_search
 ## Current Things that work
 1. playing a local mp3 song (one song only)
 2. playing a song by pulling it from youtube (one song only)
+3. playing a playlist generated from youtube searches, very feature-less at the moment, will update more
 
 <hr>
 
 ##  Working on
 1. Playing multiple local files in one folder
 2. Adding lyrics for songs 
-3. Playing a youtube playlist
+3. Playing a youtube playlist ----> (adding new features)
 4. PLaying a user created playlist
 5. Adding Keybind configuration for users ease
 6. Adding mobile support
