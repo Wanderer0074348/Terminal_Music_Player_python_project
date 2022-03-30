@@ -42,12 +42,13 @@ pip3 install youtube_search
 
 ##  Working on
 1. Playing multiple local files in one folder
-2. Adding lyrics for songs 
-3. Playing a youtube playlist ----> (adding new features)
-4. PLaying a user created playlist
-5. Adding Keybind configuration for users ease
-6. Adding mobile support
-7. Adding muliplayer/ listen with friends mode
+2. Making a good looking TUI
+3. Adding lyrics for songs 
+4. Playing a youtube playlist ----> (adding new features)
+5. PLaying a user created playlist
+6. Adding Keybind configuration for users ease
+7. Adding mobile support
+8. Adding muliplayer/ listen with friends mode
 
 ## NOTE
 **please** note that this is a project to practice what i've learnt in python. You could just use mpv from the command-line directly instead of running this py file. **THIS IS A JUST A PRACTICE PROJECT**
