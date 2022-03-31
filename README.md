@@ -31,6 +31,11 @@ pip3 install youtube-dl
 ```sh
 pip3 install youtube_search
 ```
+
+### 4. [Rich](https://rich.readthedocs.io/en/stable/index.html)
+currently nothing is there that uses rich, TUI will be made using it in the future
+
+
 <hr>
 
 ## Current Things that work
