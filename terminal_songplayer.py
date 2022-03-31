@@ -3,6 +3,34 @@ from venv import create
 from youtube_search import YoutubeSearch
 import time
 
+def create_your_own_playlist():
+    playlist_name = input("enter your playlist name: ")
+    want_to_see_results = bool(input(
+        "Do you want to see the search results from the internet? type anything for <yes> and hit enter for <no>: "))
+    number_of_results = int(input(
+        "How many results do you want to see?: ")) if want_to_see_results is True else 1+1
+    buffer_list = []
+    while True:
+        user_searches = input("enter your song: \n")    
+        results = YoutubeSearch(user_searches, max_results=number_of_results).to_dict() 
+        for i in range(len(results)):
+            print(f"{i+1}. {results[i]['title']}")
+            time.sleep(0.5)
+        enter_which_audio = int(input("which audio would you like to insert? "))
+        buffer_list.append(
+            f"https://youtube.com{results[enter_which_audio-1]['url_suffix']}")
+        print(buffer_list)
+        more_songs = int(
+            input("More song to input? type 1 for yes, type 2 for no: "))
+        if more_songs == 1:
+            continue
+        else:
+            break
+    with open(f"playlistFolder/{playlist_name}.txt", "a+") as playlist:
+        for i in buffer_list:
+            playlist.write("%s\n" % i)
+    return buffer_list
+        
 
 def song_from_internet(give_search_results=False, number_of_outputs=2):
     user_searches = input("enter your song: \n")
@@ -34,39 +62,11 @@ def play_one_song(song):
 
 
 def play_mulitple_songs_from_the_internet():
-    want_to_see_results = bool(input(
-        "Do you want to see the search results from the internet? type anything for <yes> and hit enter for <no>: "))
-    number_of_results = int(input(
-        "How many results do you want to see?: ")) if want_to_see_results is True else 1+1
-    
+    select_file = input("enter case-sensitive playlist name: ")
+    def play_the_song(playlist):
+        os.system(f"mpv --playlist='playlistFolder/{playlist}.txt' --no-video")
 
-    def create_playlist():
-        buffer_list = []
-        while True:
-            user_searches = input("enter your song: \n")    
-            results = YoutubeSearch(user_searches, max_results=number_of_results).to_dict() 
-            for i in range(len(results)):
-                print(f"{i+1}. {results[i]['title']}")
-                time.sleep(0.5)
-            enter_which_audio = int(input("which audio would you like to insert? "))
-            buffer_list.append(
-                f"https://youtube.com{results[enter_which_audio-1]['url_suffix']}")
-            print(buffer_list)
-            more_songs = int(
-                input("More song to input? type 1 for yes, type 2 for no: "))
-            if more_songs == 1:
-                continue
-            else:
-                break
-        with open("playlistFolder/Playlist.txt", "a+") as playlist:
-            for i in buffer_list:
-                playlist.write("%s\n" % i)
-        return buffer_list
-
-    def play_the_song(textfile):
-        os.system(f"mpv --playlist='playlistFolder/Playlist.txt' --no-video")
-
-    play_the_song(create_playlist())
+    play_the_song(select_file)
 
 
 def main():
@@ -78,7 +78,8 @@ _____________
 |->  1. Play one song
 |->  2. Play multiple songs
 |->  3. Play from the internet
-|->  4. Exit \n
+|->  4. Make a new PLaylist
+|->  5. Exit \n
 --------------------------------------------------------------------
 enter here: '''))
         if userinp == 1:
@@ -92,6 +93,10 @@ enter here: '''))
             number_of_results = int(input(
                 "How many results do you want to see?: ")) if want_to_see_results is True else 1+1
             song_from_internet(want_to_see_results, number_of_results)
+        elif userinp == 4:
+            print(create_your_own_playlist())
+        
+        
         else:
             break
 
