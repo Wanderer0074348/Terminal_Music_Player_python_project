@@ -13,11 +13,11 @@ Ability to run it on windows(using some other media player more natively support
 
 # Dependencies
 ### 1. [mpv](https://mpv.io/)
-#### Arch Linux
+> Arch Linux
 ```sh
 sudo pacman -Syu mpv
 ```
-#### Ubuntu/Debian
+> Ubuntu/Debian
 ```sh
 sudo apt install mpv
 ```
