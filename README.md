@@ -38,6 +38,16 @@ currently nothing is there that uses rich, TUI will be made using it in the futu
 
 <hr>
 
+### Keybindings ⌨
+
+| Operation                                                                                 | Binding                          | 
+|-------------------------------------------------------------------------------------------|----------------------------------|
+| Play/Pause                                                                              | <kbd>Space Bar</kbd>  |
+| Stop and exit                                                                          | <kbd>Ctrl</kbd> + <kbd>C</kbd>   |
+| Play next song                                                                                    | <kbd>></kbd>   |
+| PLay prev song                                                                         |  <kbd><</kbd> |
+
+
 ## Current Things that work
 1. playing a local mp3 song (one song only)
 2. playing a song by pulling it from youtube (one song only)
