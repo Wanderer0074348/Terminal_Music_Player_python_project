@@ -38,7 +38,7 @@ currently nothing is there that uses rich, TUI will be made using it in the futu
 
 <hr>
 
-### Keybindings ⌨
+### Keybindings
 
 | Operation                                                                                 | Binding                          | 
 |-------------------------------------------------------------------------------------------|----------------------------------|
