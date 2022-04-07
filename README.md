@@ -36,7 +36,7 @@ pip3 install youtube_search
 currently nothing is there that uses rich, TUI will be made using it in the future
 
 
-<hr>
+
 
 ### Keybindings
 
@@ -53,7 +53,7 @@ currently nothing is there that uses rich, TUI will be made using it in the futu
 2. playing a song by pulling it from youtube (one song only)
 3. playing a playlist generated from youtube searches, very feature-less at the moment, will update more
 
-<hr>
+
 
 ##  Working on
 1. Playing multiple local files in one folder
