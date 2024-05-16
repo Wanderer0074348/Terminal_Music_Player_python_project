@@ -1,4 +1,4 @@
-# Terminal Music Player 
+# Terminal Music Player (DEAD)
 This is a terminal python project to learn the basics of os.sys calls and also work with other apps like mpv and packages like youtube dl and youtube search.
 
 # This project works on 
